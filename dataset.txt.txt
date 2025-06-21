@@ -17,36 +17,21 @@
       },
       "habits": {
         "avg_weekly_orders": 8,
-        "favorite_time_slots": [1, 2], 
+        "time_slots": [1, 2], 
         "usual_budget": {"min": 150, "max": 200}
       },
       "orders": [
         {
-          "order_id": "ORD-20240605-001",
           "timestamp": 1717605900,  
           "items": [
             {
               "item_id": "CK-001",
               "rating": 4.9,
               "quantity": 1,
-              "context": {
-                "meal_time": 2,  
-                "day_type": 0   
-              }
             }
           ]
         }
       ]
     }
   ],
-  "menu": [
-    {
-      "item_id": "CK-001",
-      "name": "chicken_khana",
-      "category": 1,  
-      "dietary": [1, 2],  
-      "price": 220,
-      "tags": [0, 1]
-    }
-  ]
-}]
+  
