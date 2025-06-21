@@ -1,0 +1,52 @@
+[{
+  "system": {
+    "encodings": {
+      "diet": {"Vegetarian": 0, "Non-Vegetarian": 1, "Vegan": 2},
+      "time_slots": {"Breakfast": 0, "Lunch": 1, "Dinner": 2},
+      "categories": {"snack": 0, "main_course": 1, "beverage": 2}
+    }
+  },
+  "users": [
+    {
+      "user_id": "U020",
+      "name": "Sandip Adhikari",
+      "diet": {
+        "primary": 1,  
+        "allergies": [],
+        "preferred_cuisines": [0, 1]  
+      },
+      "habits": {
+        "avg_weekly_orders": 8,
+        "favorite_time_slots": [1, 2], 
+        "usual_budget": {"min": 150, "max": 200}
+      },
+      "orders": [
+        {
+          "order_id": "ORD-20240605-001",
+          "timestamp": 1717605900,  
+          "items": [
+            {
+              "item_id": "CK-001",
+              "rating": 4.9,
+              "quantity": 1,
+              "context": {
+                "meal_time": 2,  
+                "day_type": 0   
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "menu": [
+    {
+      "item_id": "CK-001",
+      "name": "chicken_khana",
+      "category": 1,  
+      "dietary": [1, 2],  
+      "price": 220,
+      "tags": [0, 1]
+    }
+  ]
+}]
