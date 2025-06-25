@@ -1,37 +1,330 @@
-[{
-  "system": {
-    "encodings": {
-      "diet": {"Vegetarian": 0, "Non-Vegetarian": 1, "Vegan": 2},
-      "time_slots": {"Breakfast": 0, "Lunch": 1, "Dinner": 2},
-      "categories": {"snack": 0, "main_course": 1, "beverage": 2}
-    }
-  },
-  "users": [
-    {
-      "user_id": "U020",
-      "name": "Sandip Adhikari",
-      "diet": {
-        "primary": 1,  
-        "allergies": [],
-        "preferred_cuisines": [0, 1]  
+[
+  {
+    "user_id": "U006",
+    "user_name": "Prashansa Tuladar",
+    "user_metadata": {
+      "diet_pref": "Non-Veg",
+      "department": "BEI",
+      "avg_spice_tolerance": 0.5,
+      "complications": [],
+      "frequent_groups": {
+        "group_1": ["U007", "U008", "U009", "U0010"],
+        "group_2": ["U0011"]
       },
-      "habits": {
-        "avg_weekly_orders": 8,
-        "time_slots": [1, 2], 
-        "usual_budget": {"min": 150, "max": 200}
-      },
-      "orders": [
-        {
-          "timestamp": 1717605900,  
-          "items": [
-            {
-              "item_id": "CK-001",
-              "rating": 4.9,
-              "quantity": 1,
-            }
-          ]
+      "budget_limit": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    "order_sequence": [
+      {
+        "order_id": "ORD-20240601-002",
+        "order_date": "2025-06-01",
+        "order_time": "11:30",
+        "time_since_last_order": 0,
+        "day": "Monday",
+        "item_id": "CK-001",
+        "order_quantity": 1,
+        "group_order": {
+          "is_group": true,
+          "members": ["U007", "U009", "U010"],
+          "combined_budget": 280
+        },
+        "rating": 4.6,
+        "reorder": false,
+        "reordered_item_id": null,
+        "reorder_item_quantity": null,
+        "features": {
+          "item_name": "Chicken Khana",
+          "nutrition": {
+            "calories": 420,
+            "protein_g": 35
+          },
+          "cost": 125,
+          "spicy_level": 4,
+          "prep_time": 8
         }
-      ]
-    }
-  ],
-  
+      },
+      {
+        "order_id": "ORD-20240605-002",
+        "order_date": "2025-06-05",
+        "order_time": "13:00:00",
+        "time_since_last_order": 96,
+        "day": "Friday",
+        "item_id": "SM-010",
+        "order_quantity": 1,
+        "group_order": {
+          "is_group": false
+        },
+        "rating": 4.1,
+        "reorder": false,
+        "reordered_item_id": null,
+        "reorder_item_quantity": null,
+        "features": {
+          "item_name": "Samosa",
+          "nutrition": {
+            "calories": 150,
+            "protein_g": 4
+          },
+          "cost": 50,
+          "spicy_level": 2,
+          "prep_time": 10
+        }
+      },
+      {
+        "order_id": "ORD-20240610-003",
+        "order_date": "2025-06-10",
+        "order_time": "20:00:00",
+        "time_since_last_order": 120,
+        "day": "Tuesday",
+        "item_id": "CK-001",
+        "order_quantity": 2,
+        "group_order": {
+          "is_group": false
+        },
+        "rating": 4.8,
+        "reorder": true,
+        "reordered_item_id": "CK-001",
+        "reorder_item_quantity": 1,
+        "features": {
+          "item_name": "Chicken Khana",
+          "nutrition": {
+            "calories": 420,
+            "protein_g": 35
+          },
+          "cost": 220,
+          "spicy_level": 4,
+          "prep_time": 15
+        }
+      },
+      {
+        "order_id": "ORD-20240615-004",
+        "order_date": "2025-06-15",
+        "order_time": "18:00:00",
+        "time_since_last_order": 120,
+        "day": "Sunday",
+        "item_id": "SM-010",
+        "order_quantity": 3,
+        "group_order": {
+          "is_group": true,
+          "members": ["U007"]
+        },
+        "rating": 4.5,
+        "reorder": true,
+        "reordered_item_id": "CH-010",
+        "reorder_item_quantity": 1,
+        "features": {
+          "item_name": "Samosa",
+          "nutrition": {
+            "calories": 150,
+            "protein_g": 4
+          },
+          "cost": 80,
+          "spicy_level": 2,
+          "prep_time": 10
+        }
+      }
+    ]
+  },
+  {
+    "user_id": "U007",
+    "user_name": "Swati Shah",
+    "user_metadata": {
+      "diet_pref": "Non-Veg",
+      "department": "BEI",
+      "avg_spice_tolerance": 3.8,
+      "complications": [],
+      "frequent_groups": {
+        "group_1": ["U006", "U008", "U009", "U0010"]
+      },
+      "budget_limit": {
+        "min": 20,
+        "max": 100
+      }
+    },
+    "order_sequence": [
+      {
+        "order_id": "ORD-20240601-001",
+        "order_date": "2025-06-01",
+        "order_time": "19:30:00",
+        "time_since_last_order": 72,
+        "day": "Monday",
+        "item_id": "CK-001",
+        "order_quantity": 1,
+        "group_order": {
+          "is_group": true,
+          "members": ["U006", "U009"],
+          "combined_budget": 380
+        },
+        "rating": 4.5,
+        "reorder": false,
+        "reordered_item_id": null,
+        "reorder_item_quantity": null,
+        "features": {
+          "item_name": "Chicken Khana",
+          "nutrition": {
+            "calories": 420,
+            "protein_g": 35
+          },
+          "cost": 220,
+          "spicy_level": 4,
+          "prep_time": 15
+        }
+      },
+      {
+        "order_id": "ORD-20240604-003",
+        "order_date": "2025-06-04",
+        "order_time": "13:00:00",
+        "time_since_last_order": 41.5,
+        "day": "Thursday",
+        "item_id": "MM-007",
+        "order_quantity": 1,
+        "group_order": {
+          "is_group": false,
+          "members": null,
+          "combined_budget": null
+        },
+        "rating": 4.3,
+        "reorder": false,
+        "reordered_item_id": null,
+        "reorder_item_quantity": null,
+        "features": {
+          "item_name": "Chicken Biryani",
+          "nutrition": {
+            "calories": 500,
+            "protein_g": 32
+          },
+          "cost": 200,
+          "spicy_level": 4,
+          "prep_time": 20
+        }
+      }
+    ]
+  },
+  {
+    "user_id": "U008",
+    "user_name": "Nimisha Mallick",
+    "user_metadata": {
+      "diet_pref": "Non-Veg",
+      "department": "BEI",
+      "avg_spice_tolerance": 4.0,
+      "complications": [],
+      "frequent_groups": {
+        "group_1": ["U006", "U007", "U009", "U0010"]
+      },
+      "budget_limit": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    "order_sequence": [
+      {
+        "order_id": "ORD-20240601-002",
+        "order_date": "2025-06-02",
+        "order_time": "11:30",
+        "time_since_last_order": 0,
+        "day": "Monday",
+        "item_id": "SF-001",
+        "order_quantity": 1,
+        "group_order": {
+          "is_group": true,
+          "members": null,
+          "combined_budget": null
+        },
+        "rating": 4.2,
+        "reorder": false,
+        "reordered_item_id": null,
+        "reorder_item_quantity": null,
+        "features": {
+          "item_name": "Safale",
+          "nutrition": {
+            "calories": 420,
+            "protein_g": 35
+          },
+          "cost": 50,
+          "spicy_level": 4,
+          "prep_time": 8
+        }
+      },
+      {
+        "order_id": "ORD-20240605-002",
+        "order_date": "2025-06-03",
+        "order_time": "13:00:00",
+        "time_since_last_order": 96,
+        "day": "Tuesday",
+        "item_id": "SM-010",
+        "order_quantity": 1,
+        "group_order": {
+          "is_group": false
+        },
+        "rating": 4.1,
+        "reorder": false,
+        "reordered_item_id": null,
+        "reorder_item_quantity": null,
+        "features": {
+          "item_name": "Samosa",
+          "nutrition": {
+            "calories": 150,
+            "protein_g": 4
+          },
+          "cost": 50,
+          "spicy_level": 2,
+          "prep_time": 10
+        }
+      },
+      {
+        "order_id": "ORD-20240610-003",
+        "order_date": "2025-06-10",
+        "order_time": "20:00:00",
+        "time_since_last_order": 120,
+        "day": "Tuesday",
+        "item_id": "CK-001",
+        "order_quantity": 2,
+        "group_order": {
+          "is_group": false
+        },
+        "rating": 4.8,
+        "reorder": true,
+        "reordered_item_id": "CK-001",
+        "reorder_item_quantity": 1,
+        "features": {
+          "item_name": "Chicken Khana",
+          "nutrition": {
+            "calories": 420,
+            "protein_g": 35
+          },
+          "cost": 220,
+          "spicy_level": 4,
+          "prep_time": 15
+        }
+      },
+      {
+        "order_id": "ORD-20240615-004",
+        "order_date": "2025-06-15",
+        "order_time": "18:00:00",
+        "time_since_last_order": 120,
+        "day": "Sunday",
+        "item_id": "SM-010",
+        "order_quantity": 3,
+        "group_order": {
+          "is_group": true,
+          "members": ["U007"]
+        },
+        "rating": 4.5,
+        "reorder": true,
+        "reordered_item_id": "CH-010",
+        "reorder_item_quantity": 1,
+        "features": {
+          "item_name": "Samosa",
+          "nutrition": {
+            "calories": 150,
+            "protein_g": 4
+          },
+          "cost": 80,
+          "spicy_level": 2,
+          "prep_time": 10
+        }
+      }
+    ]
+  }
+]
