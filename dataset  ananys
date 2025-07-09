@@ -1,0 +1,137 @@
+[
+
+  {
+    "user_id": "U001",
+    "user_name": "Ananya Dangol",
+    "user_metadata": {
+      "diet_pref": "Non-Veg",
+      "department": "BEI",
+      "avg_spice_tolerance": 1.8,
+      "cuisine": ["Indian","Korean"],
+      "allergies": [],
+      "frequent_groups": {
+        "group_1": ["U001", "U003", "U002","U006","U022","U024"]
+      },
+      "budget_limit": {
+        "min": 0,
+        "max": 80
+      }
+    },
+    "order_sequence": [
+      {
+        "order_id": "ORD-202500701-011",
+        "order_date": "2025-07-01",
+        "order_time": "10:45",
+        "time_since_last_order":  0,
+        "day": "Tuesday",
+        "item_id": ["SM-001"],
+        "order_quantity": {"SF-001":1},
+        "group_order": {
+        "is_group": true,
+        "members": ["U006","U022"],
+        "combined_budget":240
+        },
+        "rating": 4.5,
+        "feedback": "Good cooked",
+        "reorder": false,
+        "reordered_item_id": null,
+        "reorder_item_quantity": null,
+        "cost":50,
+        "spicy_level": 2,
+        "prep_time": 10,
+        "time_spent":6
+    ]
+
+      },
+  
+      
+       
+  {
+    "user_id": "U006",
+    "user_name": "Keshar KC",
+    "user_metadata": {
+      "diet_pref": "Non-Veg",
+      "department": "BEI",
+      "avg_spice_tolerance": 2.0,
+      "cuisine": ["Indian"],
+      "allergies": [],
+      "frequent_groups": {
+        "group_1": ["U001", "U002","U0022","U0024"],
+        "group_2": ["U0012", "U0018","U0021"]
+      },
+      "budget_limit": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    "order_sequence": [
+      {
+        "order_id": "ORD-202500701-011",
+        "order_date": "2025-07-01",
+        "order_time": "10:45",
+        "time_since_last_order":  0,
+        "day": "Tuesday ",
+        "item_id": ["SM-001","SF-001"],
+        "order_quantity": {"SM-001":2,"SF-001":1},
+        "group_order": {
+        "is_group": true,
+        "members": ["U006","U022"],
+        "combined_budget":240
+        },
+        "rating": 4.0,
+        "feedback": " The food tasted better with good level of spices ",
+        "reorder": false,
+        "reordered_item_id": null,
+        "reorder_item_quantity": null,
+        "cost":90,
+        "spicy_level": 3,
+        "prep_time": 6,
+        "time_spent":6
+      }
+
+
+    ]
+  },
+ {
+    "user_id": "U022",
+    "user_name": "Dipankar Bohara",
+    "user_metadata": {
+      "diet_pref": "Non-Veg",
+      "department": "BEI",
+      "avg_spice_tolerance": 4.8,
+      "cuisine": ["Indian","Korean"],
+      "allergies": [],
+      "frequent_groups": {
+        "group_1": ["U001", "U003", "U002","U006","U022","U024"]
+      },
+      "budget_limit": {
+        "min": 0,
+        "max": 80
+      }
+    },
+    "order_sequence": [
+      {
+        "order_id": "ORD-202500701-011",
+        "order_date": "2025-07-01",
+        "order_time": "10:45",
+        "time_since_last_order":  0,
+        "day": "Tuesday",
+        "item_id": ["CK-001"],
+        "order_quantity": {"CK-001":1},
+        "group_order": {
+        "is_group": true,
+        "members": ["U006","U022"],
+        "combined_budget":
+        },
+        "rating": 4.5,
+        "feedback": "Good cooked",
+        "reorder": false,
+        "reordered_item_id": null,
+        "reorder_item_quantity": null,
+        "cost":100,
+        "spicy_level": 2,
+        "prep_time": 10,
+        "time_spent":6
+    ]
+
+      },
